@@ -7,6 +7,7 @@ spec:
   selector:
     matchLabels:
       app: app-b
+  serviceName: app-b
   template:
     metadata:
       labels:
