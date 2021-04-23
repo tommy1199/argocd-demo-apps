@@ -26,12 +26,12 @@ spec:
         volumeMounts:
         - name: nginx-volume
           mountPath: /usr/share/nginx/html
-      volumeClaimTemplates:
-      - metadata:
-          name: nginx-volume
-        spec:
-          accessModes:
-          - ReadWriteOnce
-          resources:
-            requests:
-              storage: 1Gi
+  volumeClaimTemplates:
+  - metadata:
+      name: nginx-volume
+    spec:
+      accessModes:
+      - ReadWriteOnce
+      resources:
+        requests:
+          storage: 1Gi
