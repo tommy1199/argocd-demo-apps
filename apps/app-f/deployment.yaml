@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-f
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app-f
+  template:
+    metadata:
+      labels:
+        app: app-f
+    spec:
+      containers:
+      - name: app-f
+        image: nginx:1.19.10
+        ports:
+        - containerPort: 8080
+        envFrom:
+        - configMapRef:
+            name: app-f-cm

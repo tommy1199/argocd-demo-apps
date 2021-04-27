@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: app-d-svc
+spec:
+  selector:
+    app: app-d
+  ports:
+  - protocol: TCP
+    port: 8080
+    targetPort: 8080
