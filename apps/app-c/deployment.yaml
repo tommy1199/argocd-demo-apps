@@ -20,3 +20,5 @@ spec:
         envFrom:
         - configMapRef:
             name: app-c-cm
+        - secretRef:
+            name: app-c-secret
