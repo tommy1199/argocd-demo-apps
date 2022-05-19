@@ -1,6 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: app-a-cm
-data:
-  SERVICE_NAME: app-a
