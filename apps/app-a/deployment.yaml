@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: app-a
-        image: nginx:1.19.10
+        image: nginx:1.19.9
         ports:
         - containerPort: 8080
         envFrom:
